@@ -3,12 +3,13 @@
 
 This repository is about using iterative learning control (ILC) for robot reference trajectory tracking problem with the situation of model mismatch. Model Predictive Control (MPC) is also used for comparison. It is initiated by the final project of **MECHENG 599 - Data Driven Methods for Control Systems (2024 Winter)** at University of Michigan - Ann Arbor.
 
-Disclaimer: This is **NOT** an research project. Some part might not be rigorous and suggestions are welcomed.
+Disclaimer: This is **NOT** a research project. Some part might not be rigorous and suggestions are welcomed.
 
 **Iterative Learning Control (ILC) Schema**
+![ILC Block Diagram](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/ilc-block-diagram.png)
 
-**ILC Result**
-
+**ILC Result (Example)**
+![ilc-qp](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png)
 
 ## Run Locally
 

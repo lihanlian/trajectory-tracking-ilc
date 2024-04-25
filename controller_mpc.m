@@ -1,5 +1,5 @@
 close all; clc; clear
-load trajectory_reference.mat
+load reference_trajectory.mat
 %% Get nominal and actual system matrices
 dt = 0.1; % Time step size
 % Construct nominal system
