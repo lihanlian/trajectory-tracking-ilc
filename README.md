@@ -9,7 +9,11 @@ Disclaimer: This is **NOT** a research project. Some part might not be rigorous 
 ![ILC Block Diagram](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/ilc-block-diagram.png)
 
 **ILC Result (Example)**
-![ilc-qp](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png)
+<!-- ![ilc-qp](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png) -->
+<p align="center">
+  <img alt="Image 1" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_before_ilc.png" width="45%" />
+  <img alt="Image 2" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png" width="45%" />
+</p>
 
 ## Run Locally
 
