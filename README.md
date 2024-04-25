@@ -24,6 +24,7 @@ Disclaimer: This is **NOT** a research project. Some part might not be rigorous 
   <img alt="Image 1" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png" width="45%" />
   <img alt="Image 2" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/error_convergence_ilc-qp.png" width="45%" />
 </p>
+
 ## Run Locally
 
 Clone the project
