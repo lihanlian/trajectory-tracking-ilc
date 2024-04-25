@@ -32,18 +32,18 @@ position = G_actual*U + d_actual;
 subplot(2,1,1)
 plot(time, x_ref, '-', 'LineWidth',2); hold on;
 plot(time, position(index_x), '--', 'LineWidth',2)
-xlabel('Time'); ylabel('Position X');legend('x\_ref', 'x\_sim')
-title('Trajectory X Before ILC')
+xlabel('Time'); ylabel('Position X');legend('x\_ref', 'x\_dc')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 subplot(2,1,2)
 plot(time, y_ref, '-', 'LineWidth',2); hold on;
 plot(time, position(index_y), '--', 'LineWidth',2)
-xlabel('Time'); ylabel('Position Y');legend('y\_ref', 'y\_sim')
-title('Trajectory Y Before ILC')
+xlabel('Time'); ylabel('Position Y');legend('y\_ref', 'y\_dc')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 figure
 plot(Traj_ref(index_x), Traj_ref(index_y), '-', 'LineWidth',2); hold on
 plot(position(index_x), position(index_y), '-.', 'LineWidth',2)
-xlabel('X'); ylabel('Y');legend('reference', 'simulation'); axis equal
-title('2D Trajectory Before ILC')
+xlabel('X'); ylabel('Y');legend('Reference', 'Direct Collocation'); axis equal
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 %% ILC Loop
 num_iterations = 200; 
 alpha = 1; % initialize step size
@@ -87,23 +87,23 @@ figure % Plot 1d trajectory vs time
 subplot(2,1,1)
 plot(time, x_ref, '-', 'LineWidth',2); hold on;
 plot(time, position(index_x), '--', 'LineWidth',2)
-legend('x\_ref', 'x\_sim')
-title('Trajectory X After ILC-MF')
+legend('x\_ref', 'x\_ilc-mf')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 subplot(2,1,2)
 plot(time, y_ref, '-', 'LineWidth',2); hold on;
 plot(time, position(index_y), '--', 'LineWidth',2)
-legend('y\_ref', 'y\_sim')
-title('Trajectory Y After ILC-MF')
+legend('y\_ref', 'y\_ilc-mf')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 figure % Plot 2d trajectory
 plot(x_ref, y_ref, '-', 'LineWidth',2); hold on
 plot(position(index_x), position(index_y), '-.', 'LineWidth',2)
-legend('Reference', 'ILC Result')
+legend('Reference', 'ILC-MF')
 xlabel('X'); ylabel('Y'); axis equal
-title('2D Trajectory After ILC-MF')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 figure % Plot error vs iteration
 plot(1:num_iterations, e_norm, '-x','LineWidth',2)
-xlabel('Iteration'); ylabel('Error')
-title('Tracking Error vs Iteration ILC-MF')
+xlabel('Iteration'); ylabel('Error\_ILC-MF')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 %%%%%%%%%%%%% Function definition %%%%%%%%%%%%%%%%%
 function trajectory = actual_dynamics(U, G_actual, d_actual)
     trajectory = G_actual * U + d_actual;

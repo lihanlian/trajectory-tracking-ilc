@@ -91,20 +91,20 @@ subplot(2,1,1)
 plot(time, x_ref, '-', 'LineWidth', 2); hold on
 plot(time,pos_x_actual, '-.', 'LineWidth', 2);
 xlabel('Time'); ylabel('Position X');legend("Reference", "MPC Result")
-title('Trajectory X for Actual Model')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 
 subplot(2,1,2)
 plot(time, y_ref, '-', 'LineWidth', 2); hold on
 plot(time,pos_y_actual, '-.', 'LineWidth', 2)
 xlabel('Time'); ylabel('Position Y');legend("Reference", "MPC Result")
-title('Trajectory Y for Actual Model')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 
 figure
 plot(x_ref, y_ref, 'LineWidth', 2); hold on
 plot(pos_x_actual,pos_y_actual, 'LineWidth', 2)
 xlabel('X'); ylabel('Y');legend("Reference", "MPC Result")
 axis equal
-title('MPC Tracking Result')
+set(gca,"fontsize", 12, 'FontWeight', 'bold')
 % Calculate the tracking error of MPC 
 traj_actual = [pos_x_actual; pos_y_actual];
 traj_ref = [x_ref; y_ref];
