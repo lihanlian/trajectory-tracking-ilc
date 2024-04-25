@@ -6,15 +6,24 @@ This repository is about using iterative learning control (ILC) for robot refere
 Disclaimer: This is **NOT** a research project. Some part might not be rigorous and suggestions are welcomed.
 
 **Iterative Learning Control (ILC) Schema**
-![ILC Block Diagram](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/ilc-block-diagram.png)
+<!-- ![ILC Block Diagram](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/ilc-block-diagram.png) -->
+<p align="center">
+  <img alt="Image 1" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/ilc-block-diagram.png" width="60%" />
+</p>
 
-**ILC Result (Example)**
+**ILC Initial Iteration and MPC Result**
 <!-- ![ilc-qp](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png) -->
 <p align="center">
   <img alt="Image 1" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_before_ilc.png" width="45%" />
-  <img alt="Image 2" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png" width="45%" />
+  <img alt="Image 2" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_mpc-2d.png" width="45%" />
 </p>
 
+**ILC-QP (Example)**
+<!-- ![ilc-qp](https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc-qp.png) -->
+<p align="center">
+  <img alt="Image 1" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/trajectory_after_ilc.png" width="45%" />
+  <img alt="Image 2" src="https://github.com/lihanlian/trajectory-tracking-ilc/blob/main/figs/error_convergence_ilc-qp.png" width="45%" />
+</p>
 ## Run Locally
 
 Clone the project
