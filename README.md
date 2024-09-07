@@ -44,11 +44,11 @@ Go to the project directory
 
 ## Acknowledgements
 The author would like to appreciate the course instructor Professor Uduak Inyang-Udoh for his help throughout the semester and discussion during office hours. The author would also like to thank Professor Zachary Manchester and Professor Pranav Bhounsule for the open course CMU 16-745 and open course on Robotics. Below are some good resources might be helpful on related topics.
- - [Lecture on Iterative Learning Control - Prof. Zachary Manchester](https://www.youtube.com/watch?v=JXZbrzJiUo4&list=PLZnJoM76RM6KugDT9sw5zhAmqKnGeoLRa&index=29)
- - [Lecture on Trajectory Optimization (Direct Collocation and Shooting Method) - Prof. Pranav Bhounsule](https://github.com/matiassingers/awesome-readme)
+ - [Lecture on Iterative Learning Control - Prof. Zachary Manchester [YouTube]](https://www.youtube.com/watch?v=JXZbrzJiUo4&list=PLZnJoM76RM6KugDT9sw5zhAmqKnGeoLRa&index=29)
+ - [Lecture on Trajectory Optimization (Direct Collocation and Shooting Method) - Prof. Pranav Bhounsule [YouTube]](https://www.youtube.com/watch?v=QzUIQcJbB5w&t=0s)
  - [MATLAB Example for Iterative Learning Control](https://www.mathworks.com/help/slcontrol/ug/model-free-iterative-learning-control-of-siso-system.html)
  - [Blog about Direct Collocation](https://sam.pfrommer.us/tutorial-direct-collocation-trajectory-optimization-with-matlab)
-- [YouTube video about Deep Deterministic Policy Gradient (DDPG)](https://www.youtube.com/watch?v=oydExwuuUCw&t=282s&ab_channel=AylwinWei)
+- [Reinforcement Learning - "DDPG" explained [YouTube]](https://www.youtube.com/watch?v=oydExwuuUCw&t=282s&ab_channel=AylwinWei)
 
 
 ## License
